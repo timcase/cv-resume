@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Ruby on Rails developer" />
-    <meta name="keywords" content="resume,cv,Tim Case" />
-    <meta name="author" content="Tim Case" />
+    <meta name="description" content="Front-end and Vue Developer" />
+    <meta name="keywords" content="resume,cv,Marko Marković" />
+    <meta name="author" content="Marko Marković" />
+    <!-- <meta name="robots" content="noindex"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
     <link href="./build.css" rel="stylesheet" />
     <title>Tim Case — Resume</title>
   </head>
@@ -18,20 +20,32 @@
         class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
       >
         <!-- Name -->
-        <header class="flex items-center mb-8 md:mb-11">
-          <div
-            class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-            style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/"
-          >
-            <div
-              class="initial text-center"
-              style="padding-bottom: 0.1875rem; /*3px*/"
+        <header
+          class="inline-flex items-baseline justify-between w-full mb-3 align-top border-b-8"
+        >
+          <div class="block pb-4">
+            <h1 class="mb-0 text-4xl font-bold text-gray-900">Tim Case</h1>
+            <!--Job Title--------------------------------------------------------------------------------------------------------->
+            <h2
+              class="m-0 ml-2 text-xl font-semibold text-gray-900 leading-snugish"
             >
-              T
-            </div>
+              Ruby on Rails Developer
+            </h2>
+            <!--Location --------------------------------------------------------------------------------------------------------->
+            <h3
+              class="m-0 mt-2 ml-2 font-semibold text-md text-gray-700 leading-snugish"
+            >
+              Anaheim, California
+            </h3>
+          </div>
+          <!--   Initials Block         -->
+          <div
+            class="justify-between px-3 py-8 mt-0 mb-5 text-3xl font-bold leading-none text-gray-200 initials-container bg-red-800 print:bg-black"
+            style=""
+          >
+            <div class="text-center initial">T</div>
             <div class="text-center initial">C</div>
           </div>
-          <h1 class="text-2xl font-semibold text-gray-750 pb-px">Tim Case</h1>
         </header>
         <!-- end Name -->
 
@@ -42,342 +56,207 @@
           <section class="mt-8 first:mt-0">
             <!-- To keep in the same column -->
             <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                ABOUT ME
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Ruby on Rails Developer
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">Since 2005</p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Minimal and formal résumé website template for print,
-                  mo&shy;bile, and desktop. The proportions are the same on the
-                  screen and paper. Built with amazing
-                  <a
-                    class="hover:bg-gray-150 rounded-lg transition ease-in duration-100"
-                    href="https://tailwindcss.com/"
-                    >Tailwind CSS&nbsp;°</a
-                  >.
-                </p>
-              </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Front-End Developer
-                </h3>
-                <p class="leading-normal text-md text-gray-650">Since 2013</p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                “docs/index.html” is the main content file. By copying HTML: add
-                pages, sec&shy;tions, subsection, and other parts.
-              </p>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                <span class="font-medium text-gray-600 print:text-black"
-                  >Important:</span
-                >
-                Too much content on one page will break the page in the form of
-                additional columns.
-              </p>
-            </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                EXPERIENCE
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    WebPraktikos Inc.
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Jun 2018 – Present | Web Developer
-                  </p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Built doner pork chop &bull; Served salmon, cream soft cheese,
-                  and brisket &bull; Acted 55% pork chop &bull; Filled
-                  burgdoggen & frankfurter strip steak with 90% burger patties
-                  and broth
-                </p>
-              </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Mammoth GmbH
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  Feb 2017 – Apr 2018 | Android Developer
-                </p>
-              </header>
-              <ul class="">
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Cooked shrimps for 2 to 3 minutes per side, or until opaque;
-                  then, transfered to a serving dish with limon
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Roasted a pig, turning frequently, until meat reached 160°F in
-                  the thickest part of the shoulder or thigh
-                </li>
-              </ul>
-            </section>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Exquisite Systems d.o.o.
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  May 2015 – Dec 2016 | Software QA Specialist
-                </p>
-              </header>
-              <ul class="">
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Made stockfish, which is unsalted fish, usully cod, dried by
-                  cold air and wind on wooden racks on the foreshore
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Preserved meat without salt by removing fat, cutting it into
-                  very thin strips and drying it in the sun or by a fire.
-                </li>
-              </ul>
-            </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                EDUCATION
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Graz University of Technology
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    2014 – 2015 | Master's Degree in Chemistry
-                  </p>
-                </header>
-              </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Vienna University of Technology
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2010 – 2013 | Bachelor’s Degree in Biology
-                </p>
-              </header>
-            </section>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Vienna University of Technology
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2010 – 2013| Bachelor’s Degree in Chemistry
-                </p>
-              </header>
-            </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                PROJECTS
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    <a
-                      href="https://github.com/WebPraktikos/universal-resume"
-                      class="group"
+              <section class="pb-2 mb-2 border-b-2 break-inside-avoid">
+                <dl>
+                  <div class="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
+                    <dt class="text-base font-medium text-gray-600">
+                      Portfolio
+                    </dt>
+                    <dd
+                      class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2"
                     >
-                      Universal Resume
-                      <span
-                        class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                        >↗</span
-                      >
-                    </a>
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Since 2019 | HTML CSS
-                  </p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Good design is as little design as possible. Less, but better
-                  — because it concentrates on the essential aspects, and the
-                  pro&shy;ducts are not burdened with non-essentials.
-                </p>
+                      https://timcase.me
+                    </dd>
+                  </div>
+                  <div class="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
+                    <dt class="text-base font-medium text-gray-600">Github</dt>
+                    <dd
+                      class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      https://github.com/timcase
+                    </dd>
+                  </div>
+                  <div class="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
+                    <dt class="text-base font-medium text-gray-600">Email</dt>
+                    <dd
+                      class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      tim@powerupdev.com
+                    </dd>
+                  </div>
+                  <div class="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
+                    <dt class="text-base font-medium text-gray-600">Phone</dt>
+                    <dd
+                      class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      +1 (714) 329-6847
+                    </dd>
+                  </div>
+                </dl>
               </section>
             </div>
 
             <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  <a
-                    href="https://github.com/WebPraktikos/tailwindcss-rich-docs"
-                    class="group"
-                  >
-                    tailwindcss-rich-docs
-                    <span
-                      class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                      >↗</span
-                    >
-                  </a>
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2017 | JavaScript
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Good design is long-lasting. It avoids being fashionable and
-                therefore never appears antiquated.<br />
-                Good design is honest. It does not make a product more
-                innovative, powerful or valuable than it really is.
+              <h2
+                class="mb-2 font-bold tracking-widest text-base text-gray-800 print:font-normal"
+              >
+                SUMMARY
+              </h2>
+              <p class="mt-2 leading-normal text-gray-900 text-md">
+                Senior Ruby on Rails developer with 18 years experience offers
+                full skills package from frontend to backend and devops.
+                Familiarity with all versions of Rails and Ruby.
               </p>
             </section>
+          </section>
 
-            <section class="mb-4.5 break-inside-avoid">
+          <section class="mt-4 first:mt-0">
+            <h2
+              class="mb-2 text-base font-bold tracking-widest text-gray-800 print:font-normal"
+            >
+              EXPERIENCE
+            </h2>
+            <section class="mb-4 break-inside-avoid">
               <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Third One
+                <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                  WingTask
                 </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2013 – 2014 | Vue
+                <p class="leading-normal text-md text-gray-700">
+                  May 2021 &ndash; Present | Ruby on Rails
                 </p>
               </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Good design is innovative. Technological development is always
-                offering new opportunities for innovative design.
+              <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+                WingTask is a mobile UI for the popular opensource command line
+                task manager, Taskwarrior. WingTask is an app wholly created by
+                me and represents my desire to build and launch my own app as
+                well as trying to provide a useful addition to a CLI app that I
+                use daily.
               </p>
             </section>
+            <section class="mb-4 break-inside-avoid">
+              <header>
+                <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                  1bios
+                </h3>
+                <p class="leading-normal text-md text-gray-700">
+                  Dec 2018 &ndash; Apr 2021 | Ruby on Rails
+                </p>
+              </header>
+              <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+                1bios is a complex set of RubyonRails applications that serve
+                different populations of users. It has a web admin area that is
+                mostly Rails and React. It also has a mobile frontend that is
+                React being served from a Rails API. The app is unique in that
+                it's a monorepo containing about 3 or 4 different Rails apps
+                being serviced by a Ruby middle tier library
+              </p>
+            </section>
+          </section>
+          <section class="mb-4 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                BidSketch
+              </h3>
+              <p class="leading-normal text-md text-gray-700">
+                Feb 2015 &ndash; Dec 2017 | Ruby on Rails
+              </p>
+            </header>
+            <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+              Worked on an unreleased app called Docsketch which is an
+              electronic signature signing app similar to HelloSign or
+              RightSignature. Using React I created the ability for a person to
+              drag and drop signing elements onto an uploaded document in order
+              to specify what needs to be executed for the signing.
+            </p>
+          </section>
 
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Fantastic Project
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2012 | JavaScript
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Strip steak tail capicola alcatra ground round tenderloin ar.
-                Venison tri-tip porchetta, brisket tenderloin pig beef.
+          <section class="mb-4 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                TaxJar
+              </h3>
+              <p class="leading-normal text-md text-gray-700">
+                Dec 2014 &ndash; Dec 2015 | Ruby on Rails
               </p>
-            </section>
+            </header>
+            <p class="mt-2.1 text-base text-gray-900 leading-normal">
+              Created a ruby client for the TaxJar API. The ruby client made it
+              easy for other ruby devs to pull data from the TaxJar REST API,
+              JSON was the data format returned and that was converted into ruby
+              objects.
+            </p>
+          </section>
+          <section class="mb-4 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                Econify
+              </h3>
+              <p class="leading-normal text-md text-gray-700">
+                Oct 2014 &ndash; Dec 2014 | Ruby on Rails
+              </p>
+            </header>
+            <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+              Econify created an app for selling parts in an Ebay like market
+              for the large machine industries. For instance, it allowed people
+              who had spare parts for locomotive trains to sell parts to one
+              another. I worked generally on fixing bugs and adding features to
+              this marketplace app
+            </p>
+          </section>
+          <section class="mb-4 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                EndPoint
+              </h3>
+              <p class="leading-normal text-md text-gray-700">
+                Mar 2011 &ndash; Sep 2014 | Ruby on Rails
+              </p>
+            </header>
+            <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+              Harvard Law commissioned End Point to build an app called H2O
+              which is a platform for creating, sharing and adapting open course
+              materials. While this app was adapted for many other institutions
+              initially it allowed Harvard Law Professors to upload PDF copies
+              of US court cases that would be part of the curriculum for Harvard
+              Law students. I worked on an annotations feature which allowed a
+              professor to share annotations of a document to their class as
+              well as allowing a student to add their own annotations. There was
+              a versioning component to this that also allowed viewing
+              annotations at different points in time.
+            </p>
+          </section>
+          <section class="mb-4 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-900 leading-snugish">
+                Morlen Sinoway
+              </h3>
+              <p class="leading-normal text-md text-gray-700">
+                June 2010 &ndash; Feb 2011 | Ruby on Rails
+              </p>
+            </header>
+            <p class="mt-2.1 text-basel text-gray-900 leading-normal">
+              Morlen Sinoway wanted an ecommerce site and I created one for them
+              using Spree, a Ruby on Rails ecommerce solution. Taking their
+              designs I wired up the product display, search, and checkout
+              process. The checkout process used payment gateway authorize.net.
+            </p>
+          </section>
+          <section class="mb-4 break-inside-avoid">
+            <p class="text-gray-700 text-center">
+              - see more history at https://timcase.me -
+            </p>
           </section>
 
           <section class="mt-8 first:mt-0">
             <!-- To keep in the same column -->
             <div class="break-inside-avoid">
               <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
+                class="mb-2 font-bold tracking-widest text-base text-gray-800 print:font-normal"
               >
                 SKILLS
               </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    JavaScript
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Middle Level
-                  </p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Good parts: pure function, higher-order functions, factory
-                  functions, composition. Bad parts: inheritance, this, new.
-                </p>
-                <div class="my-3.2 last:pb-1.5">
-                  <ul
-                    class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6"
-                  >
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      ES6
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Vue
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Functional Programming
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Node
-                    </li>
-                  </ul>
-                </div>
-              </section>
             </div>
-
             <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Other
-                </h3>
-              </header>
               <div class="my-3.2 last:pb-1.5">
                 <ul
                   class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6"
@@ -385,99 +264,141 @@
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    CSS
+                    Ruby
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Rust
+                    Ruby on Rails
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Git
+                    Hotwire
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Go
+                    TailwindCSS
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Linux Server
+                    Responsive Design
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    UI Design
+                    Atomic Design
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Photoshop
+                    Storybook
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Illustrator
+                    Javascript / ES6
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Figma
+                    Web Components
                   </li>
                   <li
                     class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                   >
-                    Typography
+                    React
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Elm
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Esbuild
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Webpack
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Postgresql
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Mysql
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    REST APIs
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    TDD
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Rspec
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Minitest
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Chef
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Spree
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Ecommerce
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Elastic Search
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    SOLR
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Linux VPS
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Containers
+                  </li>
+                  <li
+                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                  >
+                    Heroku
                   </li>
                 </ul>
               </div>
             </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                CONTACT
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <ul class="list-inside pr-7">
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    <a href="//webpraktikos.com" class="group">
-                      webpraktikos.com
-                      <span
-                        class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                        >↗</span
-                      >
-                    </a>
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    <a href="//twitter.com/webpraktikos" class="group">
-                      twitter.com/webpraktikos
-                      <span
-                        class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                        >↗</span
-                      >
-                    </a>
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    1020 Wien, Austria
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    hi@webpraktikos.com
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    (+43) 0699 77 33 77 55
-                  </li>
-                </ul>
-              </section>
-            </div>
           </section>
         </div>
         <!-- end Column -->
